@@ -1,0 +1,2 @@
+
+SELECT ReportsTo ,count(*) as 'Members',ROUND(Avg(Age),0) as 'Average Age' FROM maintable_H18ZC where ReportsTo is not null Group By ReportsTo order by ReportsTo
